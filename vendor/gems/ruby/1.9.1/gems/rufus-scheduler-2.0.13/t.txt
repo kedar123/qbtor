@@ -1,0 +1,2 @@
+$a = []; require 'rubygems'; load 'lib/rufus/scheduler.rb'; s = Rufus::Scheduler.start_new; s.cron('* * * * *') { $a << Time.now.strftime('%T.%3N') }
+s.join

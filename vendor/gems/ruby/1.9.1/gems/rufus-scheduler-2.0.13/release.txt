@@ -1,0 +1,18 @@
+Rufus-scheduler is a thread-based scheduler written in Ruby. It lets you write code like
+
+[sourcecode language="ruby"]
+s = Rufus::Scheduler.start_new
+
+s.every '10m' do
+  puts 'open the window for the cat'
+end
+
+s.at '2012-01-01 12:00' do
+  puts 'reminder: wife's birthday'
+end
+
+s.cron '0 22 * * 1-5' do
+  puts 'activate the security system'
+end
+[/sourcecode]
+
