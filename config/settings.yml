@@ -1,0 +1,48 @@
+defaults: &defaults
+  # Outgoing email configuration
+  smtp_settings:
+    :domain:         SERVER       # the domain your emails will come from
+    :address:        ADDRESS  # SMTP server used to send emails
+    :port:           PORT
+    :authentication: :plain
+    :user_name:      USERNAME
+    :password:       PASSWORD
+
+    # Set to true when using Gmail
+    :enable_starttls_auto: true
+
+    # Set to true if you have Net::SMTPSyntaxError errors when sending email.
+    # Rails has sometimes a problem when sending email from "Name <address@host.com>".
+    # If you are having problems sending email and your host is correctly configured,
+    # try setting safe_from to true. You may need to create a user account for no-reply@yourapp.com
+    :safe_from: false
+
+  # Default subject and body email fields for invoices
+  invoices:
+    default_subject: "Invoice #%invoice_id% from %company_name%"
+    default_body: |
+      ---------------------------------------------
+      Invoice Summary
+      ---------------------------------------------
+      Invoice ID: %invoice_id%
+      Issue date: %invoice_issue_date%
+      Billed to: %invoice_customer%
+      Total: %invoice_payment_total%
+      Due: %invoice_due_date%
+
+      The detailed invoice is attached as a PDF.
+
+      Thank you!
+      ---------------------------------------------
+
+development:
+  <<: *defaults
+
+test: &testing
+  <<: *defaults
+
+production:
+  <<: *defaults
+
+cucumber:
+  <<: *testing

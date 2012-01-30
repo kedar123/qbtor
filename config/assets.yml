@@ -1,0 +1,167 @@
+compress_assets: off
+package_assets: off
+javascripts:
+  workspace:
+  - public/javascripts/jquery/base.js
+  - public/javascripts/jquery/background-position.js
+  - public/javascripts/jquery/wesabe-extensions.js
+  - public/javascripts/jquery/kvo.js
+  - public/javascripts/jquery/effen.js
+  - public/javascripts/jquery/scrollTo.js
+  - public/javascripts/jquery-ui/custom.js
+  - public/javascripts/jquery-ui/wesabe-extensions.js
+  - public/javascripts/jquery/jquery.url.js
+  - public/javascripts/jquery/rails.validations.js
+  - public/javascripts/jquery/rails.validations.custom.js
+  - public/javascripts/json.js
+  - public/javascripts/json2.js
+  - public/javascripts/history.js
+  - public/javascripts/history.adapter.jquery.js
+  - public/javascripts/wesabe/base.js
+  - public/javascripts/wesabe/lang/date.js
+  - public/javascripts/wesabe/lang/number.js
+  - public/javascripts/wesabe/lang/money.js
+  - public/javascripts/wesabe/lang/uri.js
+  - public/javascripts/wesabe/lang/object.js
+  - public/javascripts/wesabe/lang/array.js
+  - public/javascripts/wesabe/lang/string.js
+  - public/javascripts/wesabe/lang/params.js
+  - public/javascripts/wesabe/lang/math.js
+  - public/javascripts/wesabe/lang/KeyValueCoding.js
+  - public/javascripts/wesabe/lang/Subscribable.js
+  - public/javascripts/wesabe/util/Logger.js
+  - public/javascripts/wesabe/util/Selection.js
+  - public/javascripts/wesabe/applesearch.js
+  - public/javascripts/wesabe/main.js
+  - public/javascripts/yui/yahoo-dom-event.js
+  - public/javascripts/yui/connection-min.js
+  - public/javascripts/yui/datasource-min.js
+  - public/javascripts/yui/datemath.js
+  - public/javascripts/yui/autocomplete-min.js
+  - public/javascripts/yui/autocomplete-wesabe-extensions.js
+  - public/javascripts/yui/aliases.js
+  - public/javascripts/wesabe/views/shared.js
+  - public/javascripts/wesabe/views/widgets/BaseWidget.js
+  - public/javascripts/wesabe/views/widgets/Container.js
+  - public/javascripts/wesabe/views/widgets/Module.js
+  - public/javascripts/wesabe/views/widgets/Form.js
+  - public/javascripts/wesabe/views/widgets/Button.js
+  - public/javascripts/wesabe/views/widgets/ButtonGroup.js
+  - public/javascripts/wesabe/views/widgets/Label.js
+  - public/javascripts/wesabe/views/widgets/BaseListWidget.js
+  - public/javascripts/wesabe/views/widgets/Dialog.js
+  - public/javascripts/wesabe/views/widgets/Notification.js
+  - public/javascripts/wesabe/views/widgets/BaseField.js
+  - public/javascripts/wesabe/views/widgets/AutocompleterField.js
+  - public/javascripts/wesabe/views/widgets/AutocompleterCombo.js
+  - public/javascripts/wesabe/views/widgets/DropDownField.js
+  - public/javascripts/wesabe/views/widgets/StateDropDownField.js
+  - public/javascripts/wesabe/views/widgets/HistoryLink.js
+  - public/javascripts/wesabe/views/widgets/tags/TagAutocompleterField.js
+  - public/javascripts/wesabe/views/widgets/transactions/TagLink.js
+  - public/javascripts/wesabe/views/widgets/transactions/TagLinkList.js
+  - public/javascripts/wesabe/views/widgets/transactions/QuickTransactionEntry.js
+  - public/javascripts/wesabe/data/currencies.js
+  - public/javascripts/wesabe/data/currency-data.js
+  - public/javascripts/wesabe/data/states.js
+  - public/javascripts/wesabe/data/state-data.js
+  - public/javascripts/wesabe/data/preferences.js
+  - public/javascripts/wesabe/data/BaseDataSource.js
+  - public/javascripts/wesabe/data/accounts/AccountDataSource.js
+  - public/javascripts/wesabe/data/tags/TagDataSource.js
+  - public/javascripts/wesabe/data/TransactionDataSource.js
+  - public/javascripts/wesabe/data/tags.js
+  - public/javascripts/rails.js
+  - public/javascripts/jquery.tmpl.min.js
+  - public/javascripts/accounting.min.js
+  - public/javascripts/facebox.js
+  dashboard:
+  - public/javascripts/wesabe/views/shared/form.js
+  - public/javascripts/wesabe/views/pages/dashboard.js
+  - public/javascripts/wesabe/views/widgets/MoneyLabel.js
+  - public/javascripts/wesabe/views/widgets/CurrencyDropDownField.js
+  - public/javascripts/wesabe/views/widgets/accounts/AccountWidget.js
+  - public/javascripts/wesabe/views/widgets/accounts/AccountGroupList.js
+  - public/javascripts/wesabe/views/widgets/accounts/AccountGroup.js
+  - public/javascripts/wesabe/views/widgets/accounts/Account.js
+  - public/javascripts/wesabe/views/widgets/accounts/Merchant.js
+  - public/javascripts/wesabe/views/widgets/accounts/AutomaticUploaderErrorDialog.js
+  - public/javascripts/wesabe/views/widgets/accounts/ManualUploadDialog.js
+  - public/javascripts/wesabe/views/widgets/targets/TargetWidget.js
+  - public/javascripts/wesabe/views/widgets/targets/Target.js
+  - public/javascripts/wesabe/views/widgets/targets/TargetList.js
+  - public/javascripts/wesabe/data/TargetDataSource.js
+  - public/javascripts/wesabe/data/credentials/CredentialDataSource.js
+  - public/javascripts/processing.js
+  - public/javascripts/wesabeCharts.js
+  accounts:
+  - public/javascripts/wesabe/views/pages/accounts.js
+  - public/javascripts/wesabe/views/account-transactions.js
+  - public/javascripts/wesabe/views/widgets/MoneyLabel.js
+  - public/javascripts/wesabe/views/widgets/CurrencyDropDownField.js
+  - public/javascripts/wesabe/views/widgets/accounts/AccountWidget.js
+  - public/javascripts/wesabe/views/widgets/accounts/AccountGroupList.js
+  - public/javascripts/wesabe/views/widgets/accounts/AccountGroup.js
+  - public/javascripts/wesabe/views/widgets/accounts/Account.js
+  - public/javascripts/wesabe/views/widgets/accounts/Merchant.js
+  - public/javascripts/wesabe/views/widgets/accounts/AutomaticUploaderErrorDialog.js
+  - public/javascripts/wesabe/views/widgets/accounts/ManualUploadDialog.js
+  - public/javascripts/wesabe/views/widgets/transactions/Transaction.js
+  - public/javascripts/wesabe/views/widgets/trends-summary.js
+  - public/javascripts/wesabe/views/widgets/tags/FilteredTagsEditDialog.js
+  - public/javascripts/wesabe/views/widgets/tags/Tag.js
+  - public/javascripts/wesabe/views/widgets/tags/TagAutocompleterField.js
+  - public/javascripts/wesabe/views/widgets/tags/TagEditDialog.js
+  - public/javascripts/wesabe/views/widgets/tags/TagEditDialogPanel.js
+  - public/javascripts/wesabe/views/widgets/tags/TagEditDialogPromptPanel.js
+  - public/javascripts/wesabe/views/widgets/tags/TagGroup.js
+  - public/javascripts/wesabe/views/widgets/tags/TagGroupList.js
+  - public/javascripts/wesabe/views/widgets/tags/TagWidget.js
+  - public/javascripts/wesabe/views/widgets/tags.js
+  - public/javascripts/wesabe/views/widgets/export.js
+  - public/javascripts/wesabe/views/shared/form.js
+  - public/javascripts/wesabe/data/credentials/CredentialDataSource.js
+  - public/javascripts/jquery.form.js
+  - public/javascripts/components/merchant-autocompleter.js
+  - public/javascripts/processing.js
+  - public/javascripts/wesabeCharts.js
+  - public/javascripts/wesabe/date-range-picker.js
+  trends:
+  - public/javascripts/wesabe/data/credentials/CredentialDataSource.js
+  - public/javascripts/wesabe/views/pages/trends.js
+  - public/javascripts/wesabe/views/widgets/MoneyLabel.js
+  - public/javascripts/wesabe/views/widgets/accounts/AccountWidget.js
+  - public/javascripts/wesabe/views/widgets/accounts/AccountGroupList.js
+  - public/javascripts/wesabe/views/widgets/accounts/AccountGroup.js
+  - public/javascripts/wesabe/views/widgets/accounts/Account.js
+  - public/javascripts/wesabe/views/widgets/accounts/Merchant.js
+  - public/javascripts/wesabe/views/widgets/accounts/AutomaticUploaderErrorDialog.js
+  - public/javascripts/wesabe/views/widgets/accounts/ManualUploadDialog.js
+  - public/javascripts/wesabe/views/widgets/spending-summary.js
+  - public/javascripts/wesabe/views/widgets/balance-sheet.js
+  - public/javascripts/wesabe/views/widgets/tags/*.js
+  - public/javascripts/wesabe/views/widgets/tags.js
+  - public/javascripts/wesabe/date-range-picker.js
+  payable:
+  - public/javascripts/accpayable.js
+
+stylesheets:
+  accounts:
+    - public/stylesheets/accounts.css
+  common:    
+    - public/stylesheets/blueprint/screen.css
+    - public/stylesheets/public.css
+    - public/stylesheets/common.css
+    - public/stylesheets/jquery-ui/custom.css
+    - public/stylesheets/common.css
+    - public/stylesheets/upload-accounts.css
+    - public/stylesheets/facebox.css
+    - public/stylesheets/bills.css
+  workspace:
+  dashboard:
+    - public/stylesheets/dashboard.css
+    - public/stylesheets/accounts.css
+    - public/stylesheets/widgets/targets.css
+  trends:
+    - public/stylesheets/trends.css
+    - public/stylesheets/accounts.css
