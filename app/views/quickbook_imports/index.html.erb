@@ -1,0 +1,85 @@
+
+<div id="header">
+
+	<div id="header_inner" class="fixed">
+
+		<div id="logo">
+			<h1><span>Quickbook</span>1.0</h1>
+			<h2>Import Status</h2>
+		</div>
+		
+		<div id="menu">
+			<ul>
+				<li><a href="#" class="active">Query</a></li>
+				 
+			</ul>
+		</div>
+		
+	</div>
+</div>
+
+<div id="main">
+
+	<div id="main_inner" class="fixed">
+
+		<div id="primaryContent_3columns">
+                                     Refresh The Page for checking the status
+		  <div id="update_ststus" >
+ 
+                     This will update the status
+  
+                  </div>
+	
+		</div>
+		
+		<div id="secondaryContent_3columns">
+		 <div id="import_details">
+   Click <%=link_to "Here",importqwc_path%> Download qwc file
+   
+                 </div>
+	 
+
+		</div>
+
+		<br class="clear" />
+
+	</div>
+
+</div>
+
+<div id="footer" class="fixed">
+	 Status
+</div>
+<div id="replanimport" >
+	To Restart The Import Click On QBWC update selected button. And Click <span class="redme" onclick="callRestartimport()">Here </span>for  change the status
+</div>
+
+
+ 
+ <script>
+function callMeOften()
+{
+      $.ajax({
+                    method: 'get',
+                    url : "<%= quickbook_import_status_path %>",
+                    dataType : 'text',
+                    success: function (text) { document.getElementById('update_ststus').innerHTML =  text ;}
+                 });
+
+}
+
+callMeOften();  
+
+function callRestartimport()
+{
+      $.ajax({
+                    method: 'get',
+                    url : "/replan_import",
+                    dataType : 'text',
+                    success: function (text) { }
+                 });
+
+}
+
+
+</script>
